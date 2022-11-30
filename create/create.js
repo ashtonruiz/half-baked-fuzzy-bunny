@@ -17,7 +17,7 @@ form.addEventListener('submit', async (e) => {
         family_id: familyId,
     });
     form.reset();
-    // window.location.replace('../families');
+    window.location.replace('../families');
 });
 
 window.addEventListener('load', async () => {
