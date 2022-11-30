@@ -45,21 +45,21 @@ function displayFamilies(families) {
             });
             // append this bunnyEl to the bunniesEl
             bunniesEl.append(bunnyEl);
-            // append the bunniesEl and nameEl to the familyEl
-            familyEl.append(nameEl, bunniesEl);
-            // append the familyEl to the familiesEl
-            familiesEl.append(familyEl);
         }
+        // append the bunniesEl and nameEl to the familyEl
+        familyEl.append(nameEl, bunniesEl);
+        // append the familyEl to the familiesEl
+        familiesEl.append(familyEl);
     }
-    // your HTML Element should look like this:
-    // <div class="family">
-    //    <h3>the Garcia family</h3>
-    //    <div class="bunnies">
-    //        <div class="bunny">Fluffy</div>
-    //        <div class="bunny">Bob</div>
-    //    </div>
-    // </div>
 }
+// your HTML Element should look like this:
+// <div class="family">
+//    <h3>the Garcia family</h3>
+//    <div class="bunnies">
+//        <div class="bunny">Fluffy</div>
+//        <div class="bunny">Bob</div>
+//    </div>
+// </div>
 
 window.addEventListener('load', async () => {
     const families = await getFamilies();
